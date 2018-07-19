@@ -4,6 +4,9 @@
   "description": "Just playing around with implementing a REST api using Lambda and API Gateway.",
   "main": "index.js",
   "scripts": {
+    "lint": "standard",
+    "fix": "standard --fix",
+    "pretest": "npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1",
     "package": "npm-pack-zip",
     "predeploy": "npm run package",
@@ -23,7 +26,8 @@
     "lambda-api": "^0.7.0"
   },
   "devDependencies": {
-    "npm-pack-zip": "^1.2.6"
+    "npm-pack-zip": "^1.2.6",
+    "standard": "^11.0.1"
   },
   "files": [
     "index.js"
