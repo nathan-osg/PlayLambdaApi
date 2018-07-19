@@ -1,0 +1,34 @@
+{
+  "name": "play-lambda-api",
+  "version": "1.0.0",
+  "description": "Just playing around with implementing a REST api using Lambda and API Gateway.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "npm-pack-zip",
+    "predeploy": "npm run package",
+    "deploy": "node bin/deploy.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathan-osg/PlayLambdaApi.git"
+  },
+  "author": "Nathan Redding",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/nathan-osg/PlayLambdaApi/issues"
+  },
+  "homepage": "https://github.com/nathan-osg/PlayLambdaApi#readme",
+  "dependencies": {
+    "lambda-api": "^0.7.0"
+  },
+  "devDependencies": {
+    "npm-pack-zip": "^1.2.6"
+  },
+  "files": [
+    "index.js"
+  ],
+  "bundledDependencies": [
+    "lambda-api"
+  ]
+}

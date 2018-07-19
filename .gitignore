@@ -1,0 +1,5 @@
+.terraform
+*.tfstate.backup
+.idea
+play-lambda-api.zip
+node_modules
